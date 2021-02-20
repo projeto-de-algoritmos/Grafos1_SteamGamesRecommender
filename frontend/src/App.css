@@ -1,0 +1,29 @@
+body > #root > div {
+  height: 100vh;
+}
+
+#all {
+  display: flex;
+  direction: ltr;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+#Header {
+  height: 10%;
+  width: 100%;
+  background-color: #171a21;
+  color: white;
+  justify-content: center;
+}
+
+#Search {
+  height: 90%;
+  width: 25%;
+  background-color: rgb(55, 55, 55);
+  flex-grow: 0.2;
+}
+
+/* .App {
+  height: 100%;
+} */
