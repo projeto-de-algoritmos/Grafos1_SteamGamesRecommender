@@ -13,7 +13,7 @@ def search_names(name):
             game = json.loads(line)
             key = list(game.keys())[0]
             if search in game.get(key).get('name'):
-                gameslist.append({'appid': key, 'name': game.get(key).get('name')})
+                gameslist.append({'value': key, 'label': game.get(key).get('name')})
                 count += 1
                 if count >= 10:
                     break
@@ -69,7 +69,7 @@ def filter_api_(appid, visited=[], max_comparations = 20):
 
             visitedappids = []
             for visit in visited:
-                visitedappids.append(visit.get('appid'))
+                visitedappids.append(visit.get('id'))
                     
             if aux_game_id in visitedappids:
                 continue
@@ -104,7 +104,7 @@ def hasEmptyProperty(game):
             return True
     return False
 
-def filter_weights(weights, min_categories = 2, min_genres = 2, min_developers = 1):
+def filter_weights(weights, min_categories = 5, min_genres = 3, min_developers = 1):
     if weights.get('peso_dev') >= min_developers:
         return True
     elif weights.get('peso_categories') >= min_categories:
@@ -133,8 +133,8 @@ def bfs_filter(appid, maxlayer = 2):
     visited = []
     visited.append(
         {
-            'appid': appid,
-            'name': search_game(appid).get('name')
+            'id': appid,
+            'label': search_game(appid).get('name')
         }
     )
     edges = []
@@ -147,8 +147,8 @@ def bfs_filter(appid, maxlayer = 2):
             continue
 
         for visit in visited:
-            if visit.get('appid') == w.get('appid'):
-                visit['name'] = w.get('name')
+            if visit.get('id') == w.get('appid'):
+                visit['label'] = w.get('name')
 
         if layer >= maxlayer:
             continue
@@ -158,7 +158,7 @@ def bfs_filter(appid, maxlayer = 2):
             if not (v.get('appid') in visited):
                 fila.append([v.get('appid'), layer+1])
                 visited.append({
-                    'appid': v.get('appid')
+                    'id': v.get('appid')
                 })
                 edges.append({
                     'from': w.get('appid'),

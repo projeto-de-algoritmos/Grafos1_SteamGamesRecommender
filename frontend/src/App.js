@@ -9,27 +9,13 @@ import axios from 'axios';
 
 function App() {
 
-  const api = axios.create({
-    baseURL: "localhost:5000"
-  })
   const [selected, setSelected] = useState();
   // const [appid, setAppId] = useState();
   const [name, setName] = useState("");
   const [list, setList] = useState([]);
   const [network, setNetwork] = useState();
 
-  const [graph, setGraph] = useState({
-    nodes: [
-      {id: 25484, label: "teste"},
-      {id: 123, label: "teste2"},
-      {id: 85184, label: "teste3"}
-    ],
-    edges: [
-      {from: 25484, to: 123},
-      {from: 123, to: 85184},
-      {from: 85184, to: 25484}
-    ]
-  });
+  const [graph, setGraph] = useState();
 
   const options = {
     edges: {
@@ -47,17 +33,13 @@ function App() {
   }
 
   const loadOptions = (inputvalue, callback) => {
-    // api.get(`/search/${inputvalue}`).then(
-    //   (Response) => {
-    //     // tratar Response
-    //     callback(Response)
-    //   }
-    // )
-    setTimeout(() => {
-      callback([
-        {value: "abc", label: "teste"}
-      ])
-    }, 1000)
+    axios.get(`http://localhost:5000/search/${inputvalue}`).then(
+      (response) => {
+        callback(JSON.parse(response.data))
+      }
+    ).catch((err) => {
+      console.log(err)
+    })
   }
 
   const handleSelection = (e) => {
@@ -69,24 +51,14 @@ function App() {
   }
 
   const submit = () => {
-    // api.get(`/${selected}`).then(
-    //   (Response) => {
-    //     setGraph(Response)
-    //   }
-    // )
-
-    // setGraph({})
-    
-    network.setData({
-      nodes: [
-        {id: 1, label: "a"},
-        {id: 2, label: "b"},
-        {id: 3, label: "c"}
-      ],
-      edges: [
-        {from: 1, to: 2},
-        {from: 3, to: 1},
-      ]})
+    console.log(`selected = ${selected}`);
+    axios.get(`http://localhost:5000/graph/${selected}`).then(
+      (response) => {
+        network.setData(response.data)
+      }
+    ).catch((err) => {
+      console.log(err)
+    })
   }
 
   return (
@@ -96,7 +68,7 @@ function App() {
         <AsyncSelect cacheOptions loadOptions={loadOptions} onInputChange={inputChange} onChange={handleSelection}/>
         <button onClick={submit}>Search</button>
       </div>
-      <Graph graph={graph} options={options} style={style} getNetwork={network => setNetwork(network)}/>
+      <Graph options={options} style={style} getNetwork={network => setNetwork(network)}/>
     </div>
   );
 }
