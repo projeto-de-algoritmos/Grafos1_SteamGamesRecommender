@@ -13,8 +13,14 @@ body > #root > div {
   height: 10%;
   width: 100%;
   background-color: #171a21;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center; 
   color: white;
-  justify-content: center;
+}
+
+#Header spam {
+  padding-left: 0.5em;
 }
 
 #Search {
@@ -22,6 +28,12 @@ body > #root > div {
   width: 25%;
   background-color: rgb(55, 55, 55);
   flex-grow: 0.2;
+}
+
+#Search button{
+  margin-top: 1.0em;
+  width: 100%;
+  color: black;
 }
 
 /* .App {

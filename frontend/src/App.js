@@ -7,6 +7,8 @@ import AsyncSelect from 'react-select/async';
 
 import axios from 'axios';
 
+import options from './VisOptions'
+
 function App() {
 
   const [selected, setSelected] = useState();
@@ -16,21 +18,6 @@ function App() {
   const [network, setNetwork] = useState();
 
   const [graph, setGraph] = useState();
-
-  const options = {
-    edges: {
-      arrows: {
-        to: {
-          enabled: false
-        }
-      }
-    }
-  }
-
-  const style = {
-    height: '90%',
-    width: '75%'
-  }
 
   const loadOptions = (inputvalue, callback) => {
     axios.get(`http://localhost:5000/search/${inputvalue}`).then(
@@ -63,12 +50,12 @@ function App() {
 
   return (
     <div id="all">
-      <div id="Header">SteamGamesRecommender</div>
+      <div id="Header"><spam>SteamGamesRecommender</spam></div>
       <div id="Search">
         <AsyncSelect cacheOptions loadOptions={loadOptions} onInputChange={inputChange} onChange={handleSelection}/>
         <button onClick={submit}>Search</button>
       </div>
-      <Graph options={options} style={style} getNetwork={network => setNetwork(network)}/>
+      <Graph options={options} style={options.style} getNetwork={network => setNetwork(network)}/>
     </div>
   );
 }

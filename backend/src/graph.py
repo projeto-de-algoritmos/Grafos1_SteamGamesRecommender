@@ -134,7 +134,8 @@ def bfs_filter(appid, maxlayer = 2):
     visited.append(
         {
             'id': appid,
-            'label': search_game(appid).get('name')
+            'label': search_game(appid).get('name'),
+            'group': layer
         }
     )
     edges = []
@@ -153,12 +154,13 @@ def bfs_filter(appid, maxlayer = 2):
         if layer >= maxlayer:
             continue
 
-        w['similar_games'] = filter_api_(w.get('appid'), visited=visited)
+        w['similar_games'] = filter_api_(w.get('appid'), visited=visited, max_comparations=5)
         for v in w.get('similar_games'):
             if not (v.get('appid') in visited):
                 fila.append([v.get('appid'), layer+1])
                 visited.append({
-                    'id': v.get('appid')
+                    'id': v.get('appid'),
+                    'group': layer+1
                 })
                 edges.append({
                     'from': w.get('appid'),
