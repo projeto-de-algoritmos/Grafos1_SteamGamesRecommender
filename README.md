@@ -10,13 +10,21 @@
 | 18/0029177  |  Wagner Martins da Cunha |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este projeto tem como objetivo ser um guia de relações entre jogos da plataforma [Steam](https://store.steampowered.com/?l=portuguese), que por meio do uso de Grafos e do algorítmo BFS (Busca em Largura), realiza análises de semelhanças baseando-se em critérios de Categorias, Gêneros e Desenvolvedores. 
+
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+### A aplicação
+    ![Counter Strike - GO](img/csgoFront.jpg)
+    ![Red Dead Redemption 2](img/reddeadredemption2Front.jpg)
+
+### Funcionamento no BackEnd
+    ![Grafo](img/getGraphBack.jpg)
+    ![Busca](img/csgoBack.jpg)
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
+**Linguagem**: ![Python](https://www.python.org/)<br>
 **Framework**: (caso exista)<br>
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
