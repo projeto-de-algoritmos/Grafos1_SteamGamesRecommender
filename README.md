@@ -24,8 +24,49 @@ Este projeto tem como objetivo ser um guia de relações entre jogos da platafor
     ![Busca](img/csgoBack.jpg)
 
 ## Instalação 
-**Linguagem**: ![Python](https://www.python.org/)<br>
-**Framework**: (caso exista)<br>
+#### Linguagem: 
+* BackEnd: [Python](https://www.python.org/)
+* FrontEnd: [JavaScript](https://www.javascript.com/)
+
+#### Framework:
+* BackEnd: [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* FrontEnd: [React](https://pt-br.reactjs.org/)
+
+
+### :warning: Como rodar o projeto?
+> Ter instalado as seguintes dependências
+    
+    Pytyon: Versão 3+
+    Node: Versão 12+
+    Npm: Versão 6+
+> Clonar este repositório
+
+    git clone https://github.com/projeto-de-algoritmos/Grafos1_SteamGamesRecommender.git
+> Acessar a pasta raiz do repositório 
+
+    cd ../../Grafos1_SteamGamesRecommender
+#### Configurando o BackEnd
+> Acessar a pasta raiz do BackEnd
+
+    cd ../../Grafos1_SteamGamesRecommender/backend
+##### Comandos
+> Para executar o backend, utilize o ambiente virtual venv:
+
+    python3 -m venv venv
+> Para executar o ambiente(em um linux), digite na raís desta pasta.
+
+    source ./venv/bin/activate
+> e por fim dê o comando
+
+    activate
+> Com o ambiente virtual ativado, instale as bibliotecas:
+
+    pip3 install -r requirements.txt
+> Por fim defina a variável de ambiente do flask e execute o mesmo:
+
+    export FLASK_APP=src/app.py
+    flaskrun
+
 Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 ## Uso 
