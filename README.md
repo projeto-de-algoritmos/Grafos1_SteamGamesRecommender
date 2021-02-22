@@ -34,44 +34,78 @@ Este projeto tem como objetivo ser um guia de relações entre jogos da platafor
 
 
 ### :warning: Como rodar o projeto?
-> Ter instalado as seguintes dependências
-    
-    Pytyon: Versão 3+
-    Node: Versão 12+
-    Npm: Versão 6+
-> Clonar este repositório
+Ter instalado as seguintes dependências
+ 
+```
+Pytyon: Versão 3+
+Node: Versão 12+
+Npm: Versão 6+
+```
+Clonar este repositório
 
-    git clone https://github.com/projeto-de-algoritmos/Grafos1_SteamGamesRecommender.git
-> Acessar a pasta raiz do repositório 
+```
+git clone https://github.com/projeto-de-algoritmos/Grafos1_SteamGamesRecommender.git
+```
+Acessar a pasta raiz do repositório 
 
-    cd ../../Grafos1_SteamGamesRecommender
+```
+cd ../../Grafos1_SteamGamesRecommender
+```
 #### Configurando o BackEnd
-> Acessar a pasta raiz do BackEnd
+Acessar a pasta raiz do BackEnd
 
-    cd ../../Grafos1_SteamGamesRecommender/backend
-##### Comandos
-> Para executar o backend, utilize o ambiente virtual venv:
+```
+cd ../../Grafos1_SteamGamesRecommender/backend
+```
+Para executar o backend, utilize o ambiente virtual venv:
 
-    python3 -m venv venv
-> Para executar o ambiente(em um linux), digite na raís desta pasta.
+```
+python3 -m venv venv
+```
+Para executar o ambiente(em um linux), digite na raís desta pasta.
 
-    source ./venv/bin/activate
-> e por fim dê o comando
+```
+source ./venv/bin/activate
+```
+e por fim dê o comando
 
-    activate
-> Com o ambiente virtual ativado, instale as bibliotecas:
+```
+activate
+```
+Com o ambiente virtual ativado, instale as bibliotecas:
 
-    pip3 install -r requirements.txt
-> Por fim defina a variável de ambiente do flask e execute o mesmo:
+```
+pip3 install -r requirements.txt
+```
+Por fim defina a variável de ambiente do flask e execute o mesmo:
 
-    export FLASK_APP=src/app.py
-    flaskrun
+```
+export FLASK_APP=src/app.py
+flaskrun
+```
+#### Configurando o FrontEnd
+Acessar a pasta raiz do FrontEnd
 
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+```
+cd ../../Grafos1_SteamGamesRecommender/frontend
+```
+Realize a instalação das dependências
+
+```
+npm install
+```
+Execute a aplicação no modo de desenvolvimento
+
+```
+npm start
+```
+##### :warning: Observações
+Nesta última etapa a aplicação será aberta na porta  http://localhost:3001, logo se faz necessário que a mesma esteja livre para uso. 
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Após a aplicação dos comandos citados nos tópicos anteriores, o projeto irá abrir no seu navegador padrão. 
 
+* Para realizar o uso do projeto é muito simples, basta inserir o nome do jogo que em questão no campo de busca e apertar "Search", após isso, o grafo com as relações entre os jogos irá aparecer no campo à direita do seu navegador. 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
 
