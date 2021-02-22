@@ -104,7 +104,7 @@ Execute a aplicação no modo de desenvolvimento
 npm start
 ```
 #### :warning: Observações
-Nesta última etapa a aplicação será aberta na porta  http://localhost:3001, logo se faz necessário que a mesma esteja livre para uso. 
+Nesta última etapa a aplicação será aberta na porta  http://localhost:3000, logo se faz necessário que a mesma esteja livre para uso. 
 
 ## Uso 
 Após a aplicação dos comandos citados nos tópicos anteriores, o projeto irá abrir no seu navegador padrão. 
