@@ -16,12 +16,12 @@ Este projeto tem como objetivo ser um guia de relações entre jogos da platafor
 ## Screenshots
 
 ### A aplicação
-    ![Counter Strike - GO](img/csgoFront.jpg)
-    ![Red Dead Redemption 2](img/reddeadredemption2Front.jpg)
+   ![](img/csgoFront.jpg) 
+   ![](img/reddeadredemption2Front.jpg)
 
 ### Funcionamento no BackEnd
-    ![Grafo](img/getGraphBack.jpg)
-    ![Busca](img/csgoBack.jpg)
+   ![Grafo](img/getGraphBack.jpg)
+   ![Busca](img/csgoBack.jpg)
 
 ## Instalação 
 #### Linguagem: 
