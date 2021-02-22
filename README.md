@@ -10,7 +10,7 @@
 | 18/0029177  |  Wagner Martins da Cunha |
 
 ## Sobre 
-Este projeto tem como objetivo ser um guia de relações entre jogos da plataforma [Steam](https://store.steampowered.com/?l=portuguese), que por meio do uso de Grafos e do algorítmo BFS (Busca em Largura), realiza análises de semelhanças baseando-se em critérios de Categorias, Gêneros e Desenvolvedores. 
+Este projeto tem como objetivo ser uma aplicaçação de recomendação simples baseada nas relações entre jogos da plataforma [Steam](https://store.steampowered.com/?l=portuguese), que por meio do uso de Grafos e do algorítmo BFS (Busca em Largura), realiza análises de semelhanças baseando-se em critérios de Categorias, Gêneros e Desenvolvedores. 
 
 
 ## Screenshots
@@ -36,11 +36,12 @@ Este projeto tem como objetivo ser um guia de relações entre jogos da platafor
 * [Insomnia](https://insomnia.rest/download/) (Plataforma para testes de Requisições).
 * [Visual Studio Code](https://code.visualstudio.com/) (Editor de Texto).
 * [Git](https://git-scm.com/) (Sistema de controle de Versão).
+* [Vis Network](https://visjs.github.io/vis-network/examples/) (Biblioteca responsável pelos desenhos dos Grafos)
 ## :warning: Como rodar o projeto?
 Ter instalado as seguintes dependências
  
 ```
-Pytyon: Versão 3+
+Python: Versão 3+
 Node: Versão 12+
 Npm: Versão 6+
 ```
@@ -84,7 +85,7 @@ Por fim defina a variável de ambiente do flask e execute o mesmo:
 
 ```
 export FLASK_APP=src/app.py
-flaskrun
+flask run
 ```
 ### Configurando o FrontEnd
 Acessar a pasta raiz do FrontEnd
