@@ -33,7 +33,7 @@ Este projeto tem como objetivo ser um guia de relações entre jogos da platafor
 * FrontEnd: [React](https://pt-br.reactjs.org/)
 
 
-### :warning: Como rodar o projeto?
+## :warning: Como rodar o projeto?
 Ter instalado as seguintes dependências
  
 ```
@@ -51,7 +51,7 @@ Acessar a pasta raiz do repositório
 ```
 cd ../../Grafos1_SteamGamesRecommender
 ```
-#### Configurando o BackEnd
+### Configurando o BackEnd
 Acessar a pasta raiz do BackEnd
 
 ```
@@ -83,7 +83,7 @@ Por fim defina a variável de ambiente do flask e execute o mesmo:
 export FLASK_APP=src/app.py
 flaskrun
 ```
-#### Configurando o FrontEnd
+### Configurando o FrontEnd
 Acessar a pasta raiz do FrontEnd
 
 ```
@@ -99,7 +99,7 @@ Execute a aplicação no modo de desenvolvimento
 ```
 npm start
 ```
-##### :warning: Observações
+#### :warning: Observações
 Nesta última etapa a aplicação será aberta na porta  http://localhost:3001, logo se faz necessário que a mesma esteja livre para uso. 
 
 ## Uso 
