@@ -32,7 +32,10 @@ Este projeto tem como objetivo ser um guia de relações entre jogos da platafor
 * BackEnd: [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 * FrontEnd: [React](https://pt-br.reactjs.org/)
 
-
+#### Outras Tecnologias:
+* [Insomnia](https://insomnia.rest/download/) (Plataforma para testes de Requisições).
+* [Visual Studio Code](https://code.visualstudio.com/) (Editor de Texto).
+* [Git](https://git-scm.com/) (Sistema de controle de Versão).
 ## :warning: Como rodar o projeto?
 Ter instalado as seguintes dependências
  
@@ -106,9 +109,6 @@ Nesta última etapa a aplicação será aberta na porta  http://localhost:3001, 
 Após a aplicação dos comandos citados nos tópicos anteriores, o projeto irá abrir no seu navegador padrão. 
 
 * Para realizar o uso do projeto é muito simples, basta inserir o nome do jogo que em questão no campo de busca e apertar "Search", após isso, o grafo com as relações entre os jogos irá aparecer no campo à direita do seu navegador. 
-## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
-
-
-
-
+## Desenvolvedores 
+* Victor Samuel dos Santos Lucas - victor.samuelsantoss@gmail.com | Telegram: @victordsantoss | 
+* Wagner Martins da Cunha - wagnermc506@gmail.com | Telegram: @wagnermc506 |
