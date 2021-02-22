@@ -37,6 +37,7 @@ Este projeto tem como objetivo ser uma aplicaçação de recomendação simples 
 * [Visual Studio Code](https://code.visualstudio.com/) (Editor de Texto).
 * [Git](https://git-scm.com/) (Sistema de controle de Versão).
 * [Vis Network](https://visjs.github.io/vis-network/examples/) (Biblioteca responsável pelos desenhos dos Grafos)
+* [Steam API](https://api.steampowered.com/ISteamApps/GetAppList/v2/) (Api que contém todos os jogos da plataforma com suas respectivas informações)
 ## :warning: Como rodar o projeto?
 Ter instalado as seguintes dependências
  
