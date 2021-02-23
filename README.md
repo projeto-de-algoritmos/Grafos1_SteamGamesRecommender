@@ -114,7 +114,7 @@ Após a aplicação dos comandos citados nos tópicos anteriores, o projeto irá
 
 ## Vídeo de apresentação
 
-O vídeo da apresentação está disponível no repositório. Entretanto, caso hajam problemas na reprodução, o mesmo pode ser visualizado no [youtube](https://youtu.be/b7bXTcVlwpE).
+O [vídeo da apresentação](https://github.com/projeto-de-algoritmos/Grafos1_SteamGamesRecommender/blob/master/apresentacao_steamgamesrecommender.mp4) está disponível no repositório. Entretanto, caso haja problemas na reprodução, o mesmo pode ser visualizado no [youtube](https://youtu.be/b7bXTcVlwpE).
 
 ## Desenvolvedores 
 * Victor Samuel dos Santos Lucas - victor.samuelsantoss@gmail.com | Telegram: @victordsantoss | 
