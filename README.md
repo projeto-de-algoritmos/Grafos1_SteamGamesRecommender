@@ -54,13 +54,13 @@ git clone https://github.com/projeto-de-algoritmos/Grafos1_SteamGamesRecommender
 Acessar a pasta raiz do repositório 
 
 ```
-cd ../../Grafos1_SteamGamesRecommender
+cd Grafos1_SteamGamesRecommender
 ```
 ### Configurando o BackEnd
-Acessar a pasta raiz do BackEnd
+Acessar a pasta raiz do BackEnd (a partir da raiz do repositório)
 
 ```
-cd ../../Grafos1_SteamGamesRecommender/backend
+cd backend
 ```
 Para executar o backend, utilize o ambiente virtual venv:
 
@@ -89,10 +89,10 @@ export FLASK_APP=src/app.py
 flask run
 ```
 ### Configurando o FrontEnd
-Acessar a pasta raiz do FrontEnd
+Acessar a pasta raiz do FrontEnd (a partir da raiz do repositório)
 
 ```
-cd ../../Grafos1_SteamGamesRecommender/frontend
+cd frontend
 ```
 Realize a instalação das dependências
 
@@ -105,12 +105,17 @@ Execute a aplicação no modo de desenvolvimento
 npm start
 ```
 #### :warning: Observações
-Nesta última etapa a aplicação será aberta na porta  http://localhost:3000, logo se faz necessário que a mesma esteja livre para uso. 
+O backend e o frontend abrem nas portas http://localhost:5000 e http://localhost:3000, respectivamente, logo se faz necessário que ambas estejam livres para uso.
 
 ## Uso 
 Após a aplicação dos comandos citados nos tópicos anteriores, o projeto irá abrir no seu navegador padrão. 
 
 * Para realizar o uso do projeto é muito simples, basta inserir o nome do jogo que em questão no campo de busca e apertar "Search", após isso, o grafo com as relações entre os jogos irá aparecer no campo à direita do seu navegador. 
+
+## Vídeo de apresentação
+
+O vídeo da apresentação está disponível no repositório. Entretanto, caso hajam problemas na reprodução, o mesmo pode ser visualizado no [youtube](https://youtu.be/b7bXTcVlwpE).
+
 ## Desenvolvedores 
 * Victor Samuel dos Santos Lucas - victor.samuelsantoss@gmail.com | Telegram: @victordsantoss | 
 * Wagner Martins da Cunha - wagnermc506@gmail.com | Telegram: @wagnermc506 |
